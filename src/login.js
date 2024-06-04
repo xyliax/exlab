@@ -1,7 +1,7 @@
 // 20083743d PEI Yuxing
 import express from 'express';
 import multer from 'multer';
-import fs from 'fs/promises';
+import { promises as fs } from 'fs';
 
 const users = new Map();
 const init_userdb = async () => {
