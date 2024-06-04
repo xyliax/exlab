@@ -26,5 +26,5 @@ app.use('/auth', route);
 app.use('/', express.static('static'));
 app.listen(8080, () => {
   console.log(new Date().toLocaleString());
-  console.log('Server started at http://127.0.0.1:8080');
+  console.log('Server started at http://127.0.0.1:80');
 });
