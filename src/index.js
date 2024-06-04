@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 app.use('/auth', route);
 app.use('/', express.static('static'));
-app.listen(8080, () => {
+app.listen(8080, '0.0.0.0', () => {
   console.log(new Date().toLocaleString());
-  console.log('Server started at http://127.0.0.1:80');
+  console.log('Server started at 8080');
 });
