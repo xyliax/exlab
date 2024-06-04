@@ -1,7 +1,7 @@
 // 20083743d PEI Yuxing
 import express from 'express';
 import session from 'express-session';
-import login from './login.js';
+import route from './login.js';
 
 const app = new express();
 
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.redirect('/login.html');
   }
 });
-app.use('/auth', login);
+app.use('/auth', route);
 app.use('/', express.static('static'));
 app.listen(8080, () => {
   console.log(new Date().toLocaleString());
